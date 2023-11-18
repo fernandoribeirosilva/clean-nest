@@ -1,7 +1,7 @@
 import { PaginationParams } from '@/core/repositories/pagination-params'
 import { Answer } from 'src/domain/forum/enterprise/entities/answer'
 
-export interface IAnswerRepository {
+export interface IAnswersRepository {
   findById(id: string): Promise<Answer | null>
   findManyByQuestionId(
     questionId: string,
